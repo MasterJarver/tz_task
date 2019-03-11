@@ -8,7 +8,7 @@ City::City() : numberOfRailsSquare(0)
 	std::cout << "All square: " << allSquare << std::endl;
 	fillRailsVector();
 }
-City::City(int n, int m, int k) : n(n), m(m), k(k), numberOfRailsSquare(0)
+City::City(ull n, ull m, ull k) : n(n), m(m), k(k), numberOfRailsSquare(0)
 {
 	std::cout << "constructor City" << std::endl;
 	std::cout << "n: " << this->n << std::endl;
@@ -44,7 +44,7 @@ void City::fillCity()
 void City::fillRailsVector()
 {
 	rails.clear();
-	for(int i = 0; i < k; ++i)
+	for(ull i = 0; i < k; ++i)
 	{
 		rails.push_back(new TramRails());
 		std::cout << "insert " << i + 1 << " rails position, begin, end" << std::endl;
