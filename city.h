@@ -31,6 +31,8 @@ private:
 	ull allSquare; // value of all squares in city
 	ull streetLight; // value of street light
 	ull numberOfRailsSquare; // number of squares occupied by rails
+	std::vector<ull> prevRails; // рельсы предыдущего ввода, будут сравниваться с последующим вводом
+	std::vector<ull> currentRails; // рельсы текущего ввода
 	std::vector<TramRails*> rails; // container of rails
 	void fillRailsVector(); // fill container of rails with info
 };
